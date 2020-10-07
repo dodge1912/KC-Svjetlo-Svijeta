@@ -1,0 +1,52 @@
+.pastors{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.pastor_card{
+    background-color: white;
+    box-shadow: 0 1px 8px 0 rgba(61, 70, 76, 0.08), 0 2px 16px 0 rgba(0, 47, 80, 0.05);
+    width: 20%;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.pastor_img{
+    
+    margin-bottom: 30px;
+}
+
+.pastor_name{
+    font-family: 'Lato', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.pastor_contact{
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.section_title{
+    border-bottom: 2px solid #5A74F5;
+    font-family: 'Lato', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    
+}
+
+.section_text{
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 1.5;
+    
+}

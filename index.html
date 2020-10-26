@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="header-footer.css">
     <link rel="stylesheet" href="indexStyle.css">
     <link rel="stylesheet" href="oNama.css">
@@ -14,20 +15,30 @@
     <header>
         <div  class="header_container">
             <div class="header_content">
-                <img src="Images/logo.webp" class="header_logo">
+                <img src="Images/cross.png" class="header_logo">
+                <img src="Images/hamburger.png" class="hamburger_icon">
                 <div class="header_links">
                     <a href="./index.html" class="link_name link_name_bold">Naslovna</a>
                     <a href="./oNama.html" class="link_name">O nama</a>
                     <a href="./lokacija.html" class="link_name">Lokacija</a>
                     <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
                 </div>
+            </div> 
+        </div>
+        <div class="mobile_menu">
+            <div class="links">
+                <img src="Images/close-icon.png" class="close-mobile-menu_icon">
+                <a href="./index.html" class="link_name">Naslovna</a>
+                <a href="./oNama.html" class="link_name">O nama</a>
+                <a href="./lokacija.html" class="link_name">Lokacija</a>
+                <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
             </div>
         </div>
     </header>
-
+   <!-- <img src="./Images/kcss.png"/> -->
     <div class="outer_container-grey">
         <div class="main_container">
-            <div class="page_title">Kršćanski centar Svjetlo Svijeta</div>
+            <div class="page_title">Crkva Svjetlo Svijeta</div>
             
         </div>
     </div>
@@ -44,10 +55,10 @@
                     Gospodin je djelovao s njima i potvrđivao riječ njihovu čudesima, što su slijedila.
                 </div>
                 <div class="section_one-video">
-                        <iframe class="iframe" width="560" height="315" 
+                        <iframe class="iframe"  
                         src="https://www.youtube.com/embed/L1a0bXTWEn8" 
                         frameborder="0" 
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                        
                         allowfullscreen></iframe>
                 </div>
             </div>
@@ -60,7 +71,7 @@
                     <a href="./najveciDar.html" class="section_two_link">Najveći dar</a>
                     <a href="./bozjiPlan.html" class="section_two_link">Božji plan</a>
                     <a href="./bozjaPrica.html" class="section_two_link">Božja priča</a>
-                </div><br><br>
+                </div>
                 <div class="section_two-row">
                     <a href="https://www.youtube.com/channel/UCEghb_Yr0lTMX5zM_6JNicg" class="section_two_link" target="_blank">Propovijedi</a>
                     <a href="./svjedocanstva.html" class="section_two_link">Svjedočanstva</a>
@@ -138,6 +149,14 @@
 
             $(".close_button").click(function(){
             $(".donacije_card").css("display","none");
+            });
+
+            $(".hamburger_icon").click(function(){
+            $(".mobile_menu").css("display","flex");
+            });
+
+            $(".close-mobile-menu_icon").click(function(){
+            $(".mobile_menu").css("display","none");
             });
        
     </script>

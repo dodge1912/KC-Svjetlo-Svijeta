@@ -97,7 +97,7 @@
     
         border-top: 4px solid white;
         border-bottom: 4px solid white;
-        padding: 30px 0;
+        padding: 33px 0;
         border-radius: 5px;
         
     }
@@ -117,6 +117,13 @@
 @media only screen and (min-width: 900px) {
     .link_name{
         font-size: 24px;    
+    }
+
+    .link_name_bold{
+        
+        padding: 30px 0;
+        
+        
     }
 }
 
@@ -163,7 +170,10 @@
         display: flex;
         flex-direction: row;
         justify-content: space-around;
+        align-items: flex-start;
     }
+
+    
 
     .footer_content_right{
     
@@ -171,13 +181,49 @@
         align-items: flex-end;
         
     }
+
+    .footer_content_left{
+        margin: 0;
+    }
+
+    .footer_content_center{
+        margin: 0;
+    }
+
+   
+
+    .footer_link{
+        
+        
+        font-size: 16px;
+        text-shadow: 1px 1px 2px #000000;
+        margin: 0 30px 10px 0;
+        font-weight: 500;
+    }
+
+    .footer_text{
+        
+        font-size: 16px;
+        text-shadow: 1px 1px 2px #000000;
+        margin: 0 30px 10px 0;
+        font-weight: 500;
+    }
+
+    .footer_donacije{
+        margin: 0 45px 10px 0;
+    }
+
+    /* .social_media{
+        margin: 0 75px 0 0;
+    } */
+
 }
 
 .footer_text{
     color: white;
     font-family: 'Lato', sans-serif;
-    font-size: 18px;
-    text-shadow: 1px 1px 2px #000000;
+    font-size: 15px;
+    /* text-shadow: 1px 1px 2px #000000; */
     margin: 0 0 10px 0;
     font-weight: 500;
 }
@@ -200,8 +246,8 @@
     color: white;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
-    font-size: 18px;
-    text-shadow: 1px 1px 2px #000000;
+    font-size: 15px;
+    /* text-shadow: 1px 1px 2px #000000; */
     margin: 0 30px 10px 0;
     font-weight: 500;
 }
@@ -264,25 +310,27 @@
 
 
 @media only screen and (min-width: 700px) {
-    .footer_text{
-        color: white;
-        font-family: 'Lato', sans-serif;
-        font-size: 18px;
-        text-shadow: 1px 1px 2px #000000;
-        margin: 0 30px 10px 0;
-        font-weight: 500;
-    }
-
-    .footer_donacije{
-        margin: 0 45px 10px 0;
-    }
-
-    .social_media{
-        margin: 0 75px 0 0;
-    }
 
     .footer_content-column{
         width: unset;
+
+}
+
+@media only screen and (min-width: 860px) {
+    .footer_text{
+        
+        font-size: 18px;
+        text-shadow: 1px 1px 2px #000000;
+        
+        font-weight: 500;
     }
 
+    .footer_link{
+        
+        
+        font-size: 18px;
+        text-shadow: 1px 1px 2px #000000;
+        
+        font-weight: 500;
+    }
 }

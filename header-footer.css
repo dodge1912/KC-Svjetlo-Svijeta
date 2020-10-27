@@ -313,24 +313,64 @@
 
     .footer_content-column{
         width: unset;
-
+    }
 }
 
 @media only screen and (min-width: 860px) {
     .footer_text{
-        
         font-size: 18px;
-        text-shadow: 1px 1px 2px #000000;
-        
+        text-shadow: 1px 1px 2px #000000; 
         font-weight: 500;
     }
 
     .footer_link{
-        
-        
         font-size: 18px;
         text-shadow: 1px 1px 2px #000000;
-        
         font-weight: 500;
+    }
+} 
+
+.donacije_card-info{
+    background-color: white;
+    box-shadow: 0 1px 8px 0 rgba(61, 70, 76, 0.08), 0 2px 16px 0 rgba(0, 47, 80, 0.05);
+    /* width: 20%; */
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.close_button_donacije{
+    right: 14px;
+}
+
+@media only screen and (min-width: 700px) {
+    .donacije_card-info{
+        width: 85%;
+    }
+
+    .close_button_donacije{
+        right: -4px;
+    }
+}
+
+@media only screen and (min-width: 960px) {
+    .donacije_card-info{
+        width: 90%;
+    }
+
+    .close_button_donacije{
+        right: -16px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .donacije_card-info{
+        width: 100%;
+    }
+
+    .close_button_donacije{
+        right: -41px;
     }
 }

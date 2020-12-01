@@ -8,19 +8,18 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title>O nama</title>
     <link rel="icon" href="/Images/logo.webp">
+
+    <script> 
+        $(function(){
+          $("#reusable_header").load("header.html"); 
+        });
+    </script>
+    
 </head>
 <body>
     <header>
-        <div  class="header_container">
-            <div class="header_content">
-                <img src="Images/logo.webp" class="header_logo">
-                <div class="header_links">
-                    <a href="./index.html" class="link_name">Naslovna</a>
-                    <a href="./oNama.html" class="link_name link_name_bold">O nama</a>
-                    <a href="./lokacija.html" class="link_name">Lokacija</a>
-                    <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
-                </div>
-            </div>
+        <div id="reusable_header">
+            <!-- Code injected here -->
         </div>
     </header>
 

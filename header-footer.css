@@ -7,6 +7,7 @@
     background-color: #00A2D0;
     box-shadow: 0 0 8px #5A74F5;
     position: relative;
+    z-index: 1;
 }
 
 .header_content{

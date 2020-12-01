@@ -10,42 +10,24 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <title> Crkva Svjetlo Svijeta</title>
     <link rel="icon" href="/Images/cross-blue.jpg">
+
+    <script> 
+        $(function(){
+          $("#reusable_header").load("header.html"); 
+        });
+    </script>
+
 </head>
 <body>
     <header>
-        <div  class="header_container">
-            <div class="header_content">
-                <img src="Images/cross-cutted-last-color.png" class="header_logo">
-                <img src="Images/hamburger.png" class="hamburger_icon">
-                <div class="header_links">
-                    <a href="./index.html" class="link_name link_name_bold">Naslovna</a>
-                    <a href="./oNama.html" class="link_name">O nama</a>
-                    <a href="./lokacija.html" class="link_name">Lokacija</a>
-                    <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
-                </div>
-            </div> 
-        </div>
-        <div class="mobile_menu">
-            <div class="links">
-                <img src="Images/close-icon.png" class="close-mobile-menu_icon">
-                <a href="./index.html" class="link_name">Naslovna</a>
-                <a href="./oNama.html" class="link_name">O nama</a>
-                <a href="./lokacija.html" class="link_name">Lokacija</a>
-                <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
-            </div>
+        <div id="reusable_header">
+            <!-- Code injected here -->
         </div>
     </header>
-   <!-- <img src="./Images/kcss.png"/> -->
 
-    <!-- <div class="outer_container-grey"> -->
-        <!-- <div class="main_container">
-            <div class="page_title">Crkva Svjetlo Svijeta</div>
-            
-        </div> -->
         <div class="hero_image">
         
         </div>
-    <!-- </div> -->
 
     <div class="outer_container">
         <div class="main_container">

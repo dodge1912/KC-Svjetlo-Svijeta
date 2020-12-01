@@ -5,7 +5,7 @@
 .header_container{
     /* background-color: #5A74F5; */
     background-color: #00A2D0;
-    box-shadow: 0 0 8px #5A74F5;
+    box-shadow: 0 2px 2px #00A2D0;
     position: relative;
     z-index: 1;
 }

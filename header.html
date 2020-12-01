@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
     <head>
-        
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     </head>
     <body>
 
@@ -27,5 +27,16 @@
             </div>
         </div>
 
+        <script>
+        
+            $(".hamburger_icon").click(function(){
+            $(".mobile_menu").css("display","flex");
+            });
+
+            $(".close-mobile-menu_icon").click(function(){
+            $(".mobile_menu").css("display","none");
+            });
+       
+    </script>
     </body> 
 </html>

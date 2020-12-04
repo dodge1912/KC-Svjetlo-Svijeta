@@ -21,14 +21,32 @@
 </head>
 <body>
     <header>
-        <div id="reusable_header">
-            <!-- Code injected here -->
+        <div  class="header_container">
+            <div class="header_content">
+                <img src="Images/cross-cutted-last-color.png" class="header_logo">
+                <img src="Images/hamburger.png" class="hamburger_icon">
+                <div class="header_links">
+                    <a href="./index.html" class="link_name link_name_bold">Naslovna</a>
+                    <a href="./oNama.html" class="link_name">O nama</a>
+                    <a href="./lokacija.html" class="link_name">Lokacija</a>
+                    <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
+                </div>
+            </div> 
+        </div>
+        <div class="mobile_menu">
+            <div class="links">
+                <img src="Images/close-icon.png" class="close-mobile-menu_icon">
+                <a href="./index.html" class="link_name">Naslovna</a>
+                <a href="./oNama.html" class="link_name">O nama</a>
+                <a href="./lokacija.html" class="link_name">Lokacija</a>
+                <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
+            </div>
         </div>
     </header>
 
-        <div class="hero_image">
-        
-        </div>
+    <div class="hero_image">
+    
+    </div>
 
     <div class="outer_container">
         <div class="main_container">
@@ -70,10 +88,85 @@
     </div>
 
     <footer>
-        <div id="reusable_footer">
-            <!-- Code injected here -->
+        <div class="footer_container">
+            <div class="footer_content">
+                <div class="footer_content_left">
+                    <div class="footer_text">42000 Varaždin</div>
+                    <div class="footer_text">Krešimira Filića 114 </div>
+                    <a href="./lokacija.html" class="footer_text">Lokacija na mapi</a>
+                    <div class="footer_text">svjetlosvijeta@gmail.com</div>
+                    <div class="footer_text">+385958713615</div>        
+                </div>
+                <div class="footer_content_center">
+                    <div class="footer_content-column">
+                        <a href="./index.html" class="footer_link">Naslovna</a>
+                        <a href="./oNama.html" class="footer_link">O nama</a>
+                        <a href="./lokacija.html" class="footer_link">Lokacija</a>
+                        <a href="./krscanskeOsnove.html" class="footer_link">Kršćanske osnove</a>
+                    </div>
+                    <div class="footer_content-column">
+                        <a href="http://www.logos.hr/" class="footer_link" target="_blank">Knjige</a>
+                        <a href="./bozjiPlan.html" class="footer_link">Božji plan</a>
+                        <a href="./najveciDar.html" class="footer_link">Najveći dar</a>
+                        <a href="./bozjaPrica.html" class="footer_link">Božja prića</a>
+                        <a href="https://www.youtube.com/channel/UCEghb_Yr0lTMX5zM_6JNicg" class="footer_link" target="_blank" >Propovijedi</a>
+                        <a href="./svjedocanstva.html" class="footer_link">Svjedočanstva</a>
+                        
+                    </div>
+                </div>
+                <div class="footer_content_right">
+                    <div class="footer_text">Bogoslužje subotom u 19h</div>
+                    <div class="footer_donacije">Donacije</div>
+                    <div class="social_media">
+                        <a href="https://www.facebook.com/kcsvjetlosvijeta/">
+                            <img src="Images/facebook.png" class="footer_logo">
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCEghb_Yr0lTMX5zM_6JNicg">
+                            <img src="Images/youtube.png" class="footer_logo">
+                        </a>
+                    </div>
+                    <div class="donacije_card"> 
+                        <!-- <div class="pastor_card width"> -->
+                            <div class="donacije_card-info">
+                            <div class="pastor_name">Podaci:</div>
+                            <div class="pastor_contact">IBAN: HR6724840081105344795,<br>
+            
+                                Raiffeisenbank Austria d.d. Zagreb.<br>
+                                
+                                SWIFT: RZBHHR2X<br>
+                                
+                                Varaždin 42000<br>
+                                
+                                K.P.Krešimira IV, kbr.30</div>
+                        </div>  
+                        <!-- <div class="close">x</div> -->
+                        <img src="Images/x.png" class="close_button close_button_donacije">
+                    </div>
+                </div>
+            </div>
         </div>
     </footer>
+
+    <script>
+        // header 
+        $(".hamburger_icon").click(function(){
+        $(".mobile_menu").css("display","flex");
+        });
+
+        $(".close-mobile-menu_icon").click(function(){
+        $(".mobile_menu").css("display","none");
+        });
+
+        // footer
+        $(".footer_donacije").click(function(){
+        $(".donacije_card").css("display","block");
+        });
+
+        $(".close_button").click(function(){
+        $(".donacije_card").css("display","none");
+        });
+       
+    </script>
 
 </body>
 </html>

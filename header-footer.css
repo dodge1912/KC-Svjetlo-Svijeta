@@ -65,6 +65,8 @@
     font-family: 'Lato', sans-serif;
     margin-bottom: 34px;
     font-family: 'Balsamiq Sans', cursive;
+
+    z-index: 1000;
     
 }
 
@@ -73,6 +75,18 @@
     width: 24px;
     top: 26px;
     right: 24px;
+}
+
+.mobile-menu_logo{
+    position: absolute;
+    /* width: 60px; */
+    /* top: 9px; */
+    /* left: 9px; */
+    
+    /* bottom: 40px; */
+    width: 390px;
+    opacity: 0.04;
+    z-index: 100;
 }
 
 @media only screen and (min-width: 700px) {

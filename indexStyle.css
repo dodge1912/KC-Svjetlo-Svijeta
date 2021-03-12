@@ -61,7 +61,12 @@ body, html {
 .main_container {
     
     margin: auto;
-    padding: 40px 20px;
+    padding: 40px 20px 20px;
+}
+
+.main_container-cards{
+    margin: auto;
+    padding: 40px 20px 20px;
 }
 
 .page_title{
@@ -187,6 +192,10 @@ body, html {
     .mobile-cards{
         display: none;
     }
+
+    .main_container-cards {
+        padding: 60px 20px 0px;
+    }
 }
 
 .section_two_card-mobile{
@@ -224,6 +233,12 @@ body, html {
     font-size: 15px;
     color: #5C5C5C;
     
+}
+
+.cursor-image{
+    width: 24px;
+    height: 24px;
+    opacity: 0.07;
 }
 
 
@@ -355,6 +370,12 @@ body, html {
 
 
 @media only screen and (min-width: 1050px) {
+
+    .main_container-cards{
+        margin: auto;
+        padding: 80px 20px 20px;
+    }
+
     .section_two_card{    
         width: 240px;
         padding: 30px;

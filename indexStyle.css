@@ -280,6 +280,10 @@ body, html {
     margin-bottom: 20px;
 }
 
+.section_two_card-mobile-lastchild{
+    margin: 0;
+}
+
 .section_two-mobile > a{
     text-decoration: none;
 }

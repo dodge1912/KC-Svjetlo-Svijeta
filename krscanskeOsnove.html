@@ -13,13 +13,24 @@
     <header>
         <div  class="header_container">
             <div class="header_content">
-                <img src="Images/logo.webp" class="header_logo">
+                <img src="Images/cross-cutted-last-color.png" class="header_logo">
+                <img src="Images/hamburger.png" class="hamburger_icon">
                 <div class="header_links">
                     <a href="./index.html" class="link_name">Naslovna</a>
                     <a href="./oNama.html" class="link_name">O nama</a>
                     <a href="./lokacija.html" class="link_name">Lokacija</a>
-                    <a href="./krscanskeOsnove.html" class="link_name  link_name_bold">Kršćanske osnove</a>
+                    <a href="./krscanskeOsnove.html" class="link_name link_name_bold">Kršćanske osnove</a>
                 </div>
+            </div> 
+        </div>
+        <div class="mobile_menu">
+            <div class="links">
+                <img src="Images/close-icon.png" class="close-mobile-menu_icon">
+                <img src="Images/cuted-mobile.png" class="mobile-menu_logo">
+                <a href="./index.html" class="link_name">Naslovna</a>
+                <a href="./oNama.html" class="link_name">O nama</a>
+                <a href="./lokacija.html" class="link_name">Lokacija</a>
+                <a href="./krscanskeOsnove.html" class="link_name">Kršćanske osnove</a>
             </div>
         </div>
     </header>
@@ -406,14 +417,23 @@
         
     </footer>
     <script>
-        
-            $(".footer_donacije").click(function(){
-            $(".donacije_card").css("display","block");
-            });
+        // header 
+        $(".hamburger_icon").click(function(){
+        $(".mobile_menu").css("display","flex");
+        });
 
-            $(".close_button").click(function(){
-            $(".donacije_card").css("display","none");
-            });
+        $(".close-mobile-menu_icon").click(function(){
+        $(".mobile_menu").css("display","none");
+        });
+
+        // footer
+        $(".footer_donacije").click(function(){
+        $(".donacije_card").css("display","block");
+        });
+
+        $(".close_button").click(function(){
+        $(".donacije_card").css("display","none");
+        });
        
     </script>
 </body>

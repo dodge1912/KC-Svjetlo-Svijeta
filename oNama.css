@@ -1,6 +1,8 @@
 .pastors{
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
 }
 
 .pastor_card{
@@ -12,41 +14,95 @@
     flex-direction: column;
     border-radius: 12px;
     align-items: center;
+    width: fit-content;
+    justify-content: center;
+}
+
+.pastor_card:first-child{
+    margin-bottom: 40px;
 }
 
 .pastor_img{
-    
+    width: 180px;
+    height: 180px;
     margin-bottom: 30px;
 }
 
 .pastor_name{
     font-family: 'Lato', sans-serif;
-    font-size: 16px;
+    font-size: 17px;
     font-weight: 600;
     margin-bottom: 10px;
+    color: #5C5C5C;
+    
+
 }
 
 .pastor_contact{
     font-family: 'Lato', sans-serif;
-    font-size: 14px;
+    font-size: 15px;
     font-weight: 500;
-    margin-bottom: 10px;
+    /* margin-bottom: 10px; */
+    color: #5C5C5C;
 }
 
 .section_title{
-    border-bottom: 2px solid #5A74F5;
+    border-bottom: 2px solid #00A2D0;
     font-family: 'Lato', sans-serif;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 600;
-    padding-bottom: 20px;
-    margin-bottom: 40px;
+    padding-bottom: 16px;
+    margin-bottom: 26px;
+    color: #5C5C5C;
     
 }
 
 .section_text{
     font-family: 'Lato', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 500;
     line-height: 1.5;
+    color: #5C5C5C
     
+}
+
+.section_text-paragraph{
+    
+}
+
+@media only screen and (min-width: 600px) {
+
+    .pastors{
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+
+    .pastor_card:first-child{
+        margin-bottom: 0;
+    }
+
+    .section_title{ 
+        font-size: 20px;
+        padding-bottom: 18px;
+        margin-bottom: 32px; 
+    }
+    
+    .section_text{
+        font-size: 18px;
+    }
+}
+
+@media only screen and (min-width: 1270px) { 
+
+    .section_title{ 
+        font-size: 24px;
+        padding-bottom: 20px;
+        margin-bottom: 40px; 
+    }
+    
+    .section_text{
+        font-size: 20px;
+    }
+
+   
 }

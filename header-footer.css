@@ -145,7 +145,7 @@
 /* -------------------footer----------------------- */
 
 .footer_container{
-    background-color: #757575;
+    background-color: #474D4F;
 }
 
 .footer_content{
@@ -277,7 +277,7 @@
 }
 
 .footer_donacije{
-    color: #757575;
+    color: #474D4F;
     font-family: 'Lato', sans-serif;
     font-size: 18px;
     text-shadow: 1px 1px 1px #000000;
@@ -292,11 +292,9 @@
     text-shadow: 1px 1px 2px #000000;
     box-shadow: 1px 1px 2px #000000;
     text-transform: uppercase;
-
 }
 
-.footer_donacije:hover{
-    
+.footer_donacije:hover{   
     box-shadow: 1px 1px 6px #000000;
     cursor: pointer;
 }
@@ -315,12 +313,11 @@
     width: 12px;
     position: absolute;
     top: 14px;
-    right: -44px;
+    right: 14px;
     cursor: pointer;
     border: 2px solid black;
     border-radius: 13px;
-    padding: 5px;
-    
+    padding: 5px;  
 }
 
 

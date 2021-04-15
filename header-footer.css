@@ -89,6 +89,12 @@
     z-index: 100;
 }
 
+.footer_content_right{
+    position: relative;
+}
+
+
+
 @media only screen and (min-width: 700px) {
     .header_links{
         display: flex;
@@ -146,6 +152,7 @@
 
 .footer_container{
     background-color: #474D4F;
+    width: 100%; /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 }
 
 .footer_content{
@@ -173,7 +180,24 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    width: 100%; /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
     
+}
+
+.donacije_card{
+    position: absolute;
+    display: none;
+    top: 0px;
+
+    /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
+
+    width: 100%;
+    max-width: 330px;
+    left: 0;
+    right: 0;
+    margin: auto;
+
+    /* 00000000000000000000000000000000000000000000000000000000000000000000000000000 */
 }
 
 @media only screen and (min-width: 760px) {
@@ -186,15 +210,16 @@
         flex-direction: row;
         justify-content: space-around;
         align-items: flex-start;
+        position: relative;
     }
 
     
 
     .footer_content_right{
     
-        
+        position: static;
         align-items: flex-end;
-        
+        width: auto;
     }
 
     .footer_content_left{
@@ -205,7 +230,14 @@
         margin: 0;
     }
 
-   
+    .donacije_card{
+        position: absolute;
+        display: none;
+        right: 50px;
+        left: auto;
+        top: 50px;
+
+    }
 
     .footer_link{
         
@@ -299,10 +331,7 @@
     cursor: pointer;
 }
 
-.donacije_card{
-    position: absolute;
-    display: none;
-}
+
 
 .width{
     width: 100% !important;
@@ -378,12 +407,3 @@
     }
 }
 
-@media only screen and (min-width: 1200px) {
-    .donacije_card-info{
-        width: 100%;
-    }
-
-    .close_button_donacije{
-        right: -41px;
-    }
-}

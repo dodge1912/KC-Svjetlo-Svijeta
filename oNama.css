@@ -74,7 +74,9 @@
 
     .pastors{
         flex-direction: row;
+        justify-content: space-around; /*IE*/
         justify-content: space-evenly;
+        
     }
 
     .pastor_card:first-child{
